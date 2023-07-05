@@ -57,6 +57,11 @@ class Simulate:
         # add four key-events: w,s keys: playerL_up:down, Up,Down arrows: PlayerR_up:down
         # e.g. self.window.onkey(<func_to_run>, <key:string>)
 
+        self.window.onkey(self.pong.move_playerL_up, "w")
+        self.window.onkey(self.pong.move_playerL_down, "s")
+        self.window.onkey(self.pong.move_playerR_up, "Up")
+        self.window.onkey(self.pong.move_playerR_down, "Down")
+
     def draw_obj(self, obj):
         ob = t.Turtle()
         ob.speed(0)
