@@ -19,6 +19,17 @@ class Pong:
 
     # MEMBER-3/4
     # player move functions
+    def move_playerL_up(self):
+        self.playerL.pos[1] += 20
+
+    def move_playerL_down(self):
+        self.playerL.pos[1] -= 20
+
+    def move_playerR_up(self):
+        self.playerR.pos[1] += 20
+
+    def move_playerR_down(self):
+        self.playerR.pos[1] -= 20
 
 class Simulate:
     def __init__(self, pong):
